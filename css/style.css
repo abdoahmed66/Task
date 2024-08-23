@@ -1,0 +1,161 @@
+*{
+    margin:0px;
+    padding:0px
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+.first{
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+@media(max-width:850px){
+    .first {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
+.first h1 span{
+    color: blue;
+}
+.first div p {
+    color: gray;
+    margin: 20px 0px;
+}
+.first div button {
+    padding: 10px;
+    background-color: white;
+    outline: none;
+    border: 1px solid blue;
+    color: blue;
+}
+.first .image {
+    width: 400px;
+    height: auto;
+}
+@media(max-width:450px){
+    .first .image {
+        width: 100%;
+    }
+}
+
+.second {
+    padding: 50px;
+    background-color: #F4F7FD;
+}
+.second .all {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+@media(max-width:850px){
+    .second .all {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 20px;
+    }
+}
+.second h1 span {
+    color: blue;
+}
+.second p.textOne {
+    color: gray;
+    margin: 20px 0px;
+}
+.second p.textTwo {
+    color: blue;
+    margin: 20px 0px;
+    font-size: 18px;
+}
+.second .all .allFirst div{
+    padding: 5px 10px;
+    border-left: 4px solid gray;
+    position: relative;
+}
+.second .all .allFirst div:not(:last-child){
+    padding-bottom: 15px;
+}
+.second .all .allFirst div p{
+    color: gray;
+    margin-top: 10px;
+}
+.antmation::after{
+    content: "";
+    z-index: 10;
+    width: 4px;
+    height: 80%;
+    background-color: blue;
+    position: absolute;
+    left: -4px;
+    top: 0%;
+}
+.all .allSecond img {
+    width: 500px;
+    height: auto;
+}
+@media(max-width:600px){
+    .all .allSecond img {
+        width: 100%;
+    }
+}
+
+.three {
+    padding: 50px;
+}
+.three h1 {
+    text-align: center;
+}
+.three .grid {
+    margin: 50px 0px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+.three .grid div {
+    background-color: #F4F7FD;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+.three .grid div .large {
+    font-size: 30px;
+    color: aqua;
+}
+.three .grid div h3 {
+    margin: 10px 0px;
+}
+.three .grid div p {
+    color: gray;
+}
+.three .grid div:hover{
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+}
+.three .footer {
+    background-color: rgb(141, 141, 253);
+    padding: 50px 10px;
+    text-align: center;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.three .footer .h3Two {
+    margin: 20px 0px;
+}
+.three .footer button {
+    padding: 10px 20px;
+    background-color: white;
+    outline: none;
+    border: 1px solid yellow;
+    color: blue;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
